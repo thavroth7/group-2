@@ -1,0 +1,61 @@
+@import'../maxin';
+nav {
+    padding: 10px;
+    background: $colortext;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    .nav-left{
+        display: flex;
+        flex: 1;
+        align-items: center;
+        img{
+        width: 260px;
+        height: 30px;}
+    }
+    .nav-center{
+        display: flex;
+        flex: 3;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-right {
+        @include display;
+        flex: 1;
+        justify-content: center;
+        label{
+            display: none !important;
+        }
+       
+    }
+    ul{
+        @include display;
+        gap: 40px;
+        li{
+            list-style: none;
+        }
+    }
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width:900px){
+    nav{
+        height: 10vh;
+        font-size: x-small;
+        
+    }
+}
+
+
+@media( max-width:500px){
+    nav{
+        margin-top: 20px;
+        height: 10vh;
+        @include display;
+        ul{
+            display: none;
+        }
+    }
+}

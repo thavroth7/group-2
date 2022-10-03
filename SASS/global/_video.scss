@@ -1,0 +1,12 @@
+iframe{
+    display: flex;
+    width: 900px;
+    height: 70vh;
+    margin: 20px;
+}
+@media (max-width:900px){
+    iframe{
+        width: 600px;
+        height: 30vh;
+    }
+}
